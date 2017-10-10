@@ -12,6 +12,9 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/lb-eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-domain/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-common/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-login-server/pom.xml" />
       </list>
     </option>
   </component>

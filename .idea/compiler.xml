@@ -6,11 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="lb-common" />
+        <module name="lb-domain" />
         <module name="lb-eureka-server" />
+        <module name="lb-login-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="lb-common" target="1.8" />
+      <module name="lb-domain" target="1.8" />
       <module name="lb-eureka-server" target="1.8" />
+      <module name="lb-login-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
