@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/lb-doc-rpc/lb-doc-rpc.iml" filepath="$PROJECT_DIR$/lb-doc-rpc/lb-doc-rpc.iml" />
       <module fileurl="file://$PROJECT_DIR$/lb-domain/lb-domain.iml" filepath="$PROJECT_DIR$/lb-domain/lb-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/lb-service/lb-service.iml" filepath="$PROJECT_DIR$/lb-service/lb-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lb-task/lb-task.iml" filepath="$PROJECT_DIR$/lb-task/lb-task.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/libu.iml" filepath="$PROJECT_DIR$/.idea/libu.iml" />
     </modules>
   </component>

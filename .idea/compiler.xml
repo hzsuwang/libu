@@ -12,6 +12,7 @@
         <module name="lb-doc-rpc" />
         <module name="lb-domain" />
         <module name="lb-service" />
+        <module name="lb-task" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -24,6 +25,7 @@
       <module name="lb-harbor" target="1.8" />
       <module name="lb-login-server" target="1.8" />
       <module name="lb-service" target="1.8" />
+      <module name="lb-task" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
