@@ -6,17 +6,24 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="lb-admin" />
         <module name="lb-common" />
+        <module name="lb-doc" />
+        <module name="lb-doc-rpc" />
         <module name="lb-domain" />
-        <module name="lb-eureka-server" />
-        <module name="lb-login-server" />
+        <module name="lb-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="lb-admin" target="1.8" />
       <module name="lb-common" target="1.8" />
+      <module name="lb-doc" target="1.8" />
+      <module name="lb-doc-rpc" target="1.8" />
       <module name="lb-domain" target="1.8" />
       <module name="lb-eureka-server" target="1.8" />
+      <module name="lb-harbor" target="1.8" />
       <module name="lb-login-server" target="1.8" />
+      <module name="lb-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

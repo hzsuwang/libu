@@ -15,6 +15,11 @@
         <option value="$PROJECT_DIR$/lb-domain/pom.xml" />
         <option value="$PROJECT_DIR$/lb-common/pom.xml" />
         <option value="$PROJECT_DIR$/lb-login-server/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-harbor/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-admin/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-doc-rpc/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-service/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-doc/pom.xml" />
       </list>
     </option>
   </component>

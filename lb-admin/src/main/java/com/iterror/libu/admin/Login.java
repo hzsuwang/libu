@@ -1,4 +1,4 @@
-package com.iterror.libu.login;
+package com.iterror.libu.admin;
 
 /**
  * Created by tony.yan on 2017/10/10.
