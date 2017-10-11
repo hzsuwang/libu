@@ -18,4 +18,5 @@ public class EventDO extends BaseDO {
     private String title;    // 事件标题
     private String eventDesc;// 事件描述
     private Date   eventTime;// 事件时间
+    private String icon;     // 图标地扯
 }
