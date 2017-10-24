@@ -54,7 +54,7 @@ public class UserSysinfoDO extends BaseDO {
 
     @Column("apns_status")
     @Comment(" apns开关 0开，1是关")
-    private int apnsStatus; // apns开关 0开，1是关
+    private int     apnsStatus; // apns开关 0开，1是关
 
     @Column("os")
     @Comment("否 操作系统版本号")
@@ -98,9 +98,9 @@ public class UserSysinfoDO extends BaseDO {
 
     @Column("login_days")
     @Comment("用户连续登陆的天数")
-    private int loginDays;  // 用户连续登陆的天数
+    private int     loginDays;  // 用户连续登陆的天数
 
     @Column("login_time")
     @Comment("登录时间")
-    private Date              loginTime;                               // 登录时间
+    private Date    loginTime;  // 登录时间
 }
