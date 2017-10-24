@@ -22,4 +22,9 @@
 								expression="org.springframework.stereotype.Component"/>
 	</context:component-scan>
 
+	<!-- similarly, don't forget the PlatformTransactionManager -->
+	<bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+
 </beans>
