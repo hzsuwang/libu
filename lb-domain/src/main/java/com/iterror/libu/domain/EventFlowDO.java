@@ -13,8 +13,12 @@ import lombok.Data;
  */
 @Data
 @Table("lb_event_flow")
-@Comment("用户表")
+@Comment("事件记录表")
 public class EventFlowDO extends BaseDO {
+
+    @Column("user_id")
+    @Comment("用户id")
+    private Long userId;      // 用户id
 
     @Column("event_id")
     @Comment("事件id")

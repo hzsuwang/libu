@@ -13,7 +13,7 @@ import lombok.Data;
  */
 @Data
 @Table("lb_member")
-@Comment("用户表")
+@Comment("会员记录表")
 public class MemberFlowDO extends BaseDO{
 
     @Column("user_id")

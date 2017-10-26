@@ -17,7 +17,7 @@ import java.util.Date;
  */
 @Data
 @Table("lb_user_expense")
-@Comment("用户表")
+@Comment("用户记录表")
 public class UserExpenseDO extends BaseDO {
 
     @Column("user_id")

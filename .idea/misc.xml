@@ -21,6 +21,7 @@
         <option value="$PROJECT_DIR$/lb-service/pom.xml" />
         <option value="$PROJECT_DIR$/lb-doc/pom.xml" />
         <option value="$PROJECT_DIR$/lb-task/pom.xml" />
+        <option value="$PROJECT_DIR$/lb-dao/pom.xml" />
       </list>
     </option>
   </component>

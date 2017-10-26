@@ -13,7 +13,7 @@ import lombok.Data;
  */
 @Data
 @Table("lb_cash_profuct")
-@Comment("用户表")
+@Comment("充值产品信息表")
 public class CashProductDO extends BaseDO {
 
     @Column("name")
@@ -49,7 +49,7 @@ public class CashProductDO extends BaseDO {
     private String icon;          // 图标
 
     @Column("channel")
-    @Comment("渠道")
+    @Comment("支付渠道")
     private String channel;       // 渠道
 
 }

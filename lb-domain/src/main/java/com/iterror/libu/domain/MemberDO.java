@@ -13,7 +13,7 @@ import java.util.Date;
  */
 @Data
 @Table("lb_member")
-@Comment("用户表")
+@Comment("会员信息表")
 public class MemberDO extends BaseDO {
 
     @Column("user_id")

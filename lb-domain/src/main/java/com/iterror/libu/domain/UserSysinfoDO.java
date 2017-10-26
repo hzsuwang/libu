@@ -13,7 +13,7 @@ import java.util.Date;
  */
 @Data
 @Table("lb_user_sysinfo")
-@Comment("用户表")
+@Comment("用户设备信息表")
 public class UserSysinfoDO extends BaseDO {
 
     @Column("user_id")

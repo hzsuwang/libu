@@ -110,7 +110,11 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.39</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.nutz</groupId>
+            <artifactId>nutz</artifactId>
+            <version>1.r.56</version>
+        </dependency>
     </dependencies>
     <dependencyManagement>
         <dependencies>

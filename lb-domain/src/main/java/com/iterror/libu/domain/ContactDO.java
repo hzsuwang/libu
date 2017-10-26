@@ -13,12 +13,28 @@ import lombok.Data;
  */
 @Data
 @Table("lb_contact")
-@Comment("用户表")
+@Comment("联系人信息表")
 public class ContactDO extends BaseDO {
+
+    @Column("user_id")
+    @Comment("用户id")
+    private Long userId;      // 用户id
 
     @Column("name")
     @Comment("联系人名称")
     private String name;      //联系人名称
+
+    @Column("phone")
+    @Comment("联系人电话")
+    private String phone;
+
+    @Column("phone1")
+    @Comment("联系人电话1")
+    private String phone1;
+
+    @Column("phone2")
+    @Comment("联系人电话2")
+    private String phone2;
 
     @Column("contact_bak")
     @Comment("联系人备注")

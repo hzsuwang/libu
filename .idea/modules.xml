@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/lb-admin/lb-admin.iml" filepath="$PROJECT_DIR$/lb-admin/lb-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/lb-common/lb-common.iml" filepath="$PROJECT_DIR$/lb-common/lb-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lb-dao/lb-dao.iml" filepath="$PROJECT_DIR$/lb-dao/lb-dao.iml" />
       <module fileurl="file://$PROJECT_DIR$/lb-doc/lb-doc.iml" filepath="$PROJECT_DIR$/lb-doc/lb-doc.iml" />
       <module fileurl="file://$PROJECT_DIR$/lb-doc-rpc/lb-doc-rpc.iml" filepath="$PROJECT_DIR$/lb-doc-rpc/lb-doc-rpc.iml" />
       <module fileurl="file://$PROJECT_DIR$/lb-domain/lb-domain.iml" filepath="$PROJECT_DIR$/lb-domain/lb-domain.iml" />

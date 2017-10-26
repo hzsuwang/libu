@@ -17,8 +17,12 @@ import java.util.Date;
  */
 @Data
 @Table("lb_event")
-@Comment("用户表")
+@Comment("事件信息表")
 public class EventDO extends BaseDO {
+
+    @Column("user_id")
+    @Comment("用户id")
+    private Long userId;      // 用户id
 
     @Column("title")
     @Comment("事件标题")

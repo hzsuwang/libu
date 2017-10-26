@@ -10,7 +10,7 @@ import com.iterror.libu.common.dao.domain.BaseDO;
  * Created by tony.yan on 2017/10/24.
  */
 @Table("lb_sequence")
-@Comment("用户表")
+@Comment("序列信息表")
 public class SequenceDO extends BaseDO{
 
     @Column("seq_name")

@@ -13,7 +13,7 @@ import lombok.Data;
  */
 @Data
 @Table("lb_cash_flow")
-@Comment("用户表")
+@Comment("充值记录表")
 public class CashFlowDO extends BaseDO {
 
     @Column("pro_prize")

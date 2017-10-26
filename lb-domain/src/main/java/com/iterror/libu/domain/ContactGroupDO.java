@@ -13,8 +13,12 @@ import lombok.Data;
  */
 @Data
 @Table("lb_contact_group")
-@Comment("用户表")
+@Comment("联系人分组信息表")
 public class ContactGroupDO extends BaseDO {
+
+    @Column("user_id")
+    @Comment("用户id")
+    private Long userId;      // 用户id
 
     @Column("name")
     @Comment("分组名称")

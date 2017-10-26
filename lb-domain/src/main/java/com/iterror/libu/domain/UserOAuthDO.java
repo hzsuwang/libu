@@ -13,7 +13,7 @@ import lombok.Data;
  */
 @Data
 @Table("lb_user_oauth")
-@Comment("用户表")
+@Comment("第三方登录信息表")
 public class UserOAuthDO extends BaseDO {
 
     @Column("open_uid")
