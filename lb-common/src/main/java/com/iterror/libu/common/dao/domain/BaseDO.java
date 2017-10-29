@@ -1,10 +1,12 @@
 package com.iterror.libu.common.dao.domain;
 
-import lombok.Data;
+import java.util.Date;
+
 import org.nutz.dao.entity.annotation.Column;
 import org.nutz.dao.entity.annotation.Comment;
 
-import java.util.Date;
+import lombok.Data;
+import org.nutz.dao.entity.annotation.Id;
 
 /**
  * Created by tony.yan on 2017/10/11.
@@ -12,7 +14,7 @@ import java.util.Date;
 @Data
 public class BaseDO implements java.io.Serializable{
 
-    @Column("id")
+    @Id
     @Comment("序号")
     private Long id;
 
