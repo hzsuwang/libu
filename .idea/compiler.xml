@@ -8,11 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="lb-admin" />
         <module name="lb-common" />
-        <module name="lb-dao" />
         <module name="lb-doc" />
         <module name="lb-doc-rpc" />
         <module name="lb-domain" />
-        <module name="lb-service" />
         <module name="lb-task" />
       </profile>
     </annotationProcessing>

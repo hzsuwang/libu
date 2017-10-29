@@ -25,9 +25,8 @@ import java.io.IOException;
  */
 @SpringBootApplication
 @Configuration
-@ComponentScan(basePackages = {"com.iterror.libu.admin.controller"})
-//@EnableAutoConfiguration(exclude = {DataSourceAutoConfiguration.class, ThymeleafAutoConfiguration.class})
-@ImportResource(value="classpath:data-source.xml")
+@ComponentScan(basePackages = {"com.iterror.libu.admin.controller","com.iterror.libu.admin.service"})
+@ImportResource(value="classpath:application-context.xml")
 public class Application {
 
     public static void main(String[] args) {
