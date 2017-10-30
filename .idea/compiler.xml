@@ -19,13 +19,13 @@
       <module name="lb-common" target="1.8" />
       <module name="lb-dao" target="1.8" />
       <module name="lb-doc" target="1.8" />
-      <module name="lb-doc-rpc" target="1.8" />
-      <module name="lb-domain" target="1.8" />
+      <module name="lb-doc-rpc" target="1.5" />
+      <module name="lb-domain" target="1.5" />
       <module name="lb-eureka-server" target="1.8" />
       <module name="lb-harbor" target="1.8" />
       <module name="lb-login-server" target="1.8" />
       <module name="lb-service" target="1.8" />
-      <module name="lb-task" target="1.8" />
+      <module name="lb-task" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

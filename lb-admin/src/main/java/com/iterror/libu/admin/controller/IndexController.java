@@ -2,6 +2,7 @@ package com.iterror.libu.admin.controller;
 
 import com.google.common.collect.Maps;
 import com.iterror.libu.admin.service.UserService;
+import com.iterror.libu.common.view.BaseController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -10,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.Map;
 
 @Controller
-public class IndexController {
+public class IndexController extends BaseController {
 
     @Autowired
     private UserService userService;

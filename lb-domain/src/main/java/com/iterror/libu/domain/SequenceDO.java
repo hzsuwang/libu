@@ -6,9 +6,12 @@ import org.nutz.dao.entity.annotation.Table;
 
 import com.iterror.libu.common.dao.domain.BaseDO;
 
+import lombok.Data;
+
 /**
  * Created by tony.yan on 2017/10/24.
  */
+@Data
 @Table("lb_sequence")
 @Comment("序列信息表")
 public class SequenceDO extends BaseDO{

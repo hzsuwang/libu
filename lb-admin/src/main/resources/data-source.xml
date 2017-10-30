@@ -28,9 +28,6 @@
         <property name="validationQuery">
             <value>SELECT @@SQL_MODE</value>
         </property>
-        <property name="numTestsPerEvictionRun">
-            <value>30</value>
-        </property>
         <property name="timeBetweenEvictionRunsMillis">
             <value>60000</value>
         </property>
