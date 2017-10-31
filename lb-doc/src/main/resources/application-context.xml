@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+    http://www.springframework.org/schema/tx
+    http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
+
+    <bean id="properties"  class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <value>classpath:application.properties</value>
+            </list>
+        </property>
+        <property name="ignoreUnresolvablePlaceholders" value="true" />
+    </bean>
+
+
+    <import resource="data-source.xml"/>
+
+    <bean id="tenTaskJob" class="com.iterror.libu.doc.job.TenTask"/>
+    <bean id="tenJobDetail" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="group" value="job_work"/>
+        <property name="name" value="job_work_name"/>
+        <!--false表示等上一个任务执行完后再开启新的任务-->
+        <property name="concurrent" value="false"/>
+        <property name="targetObject">
+            <ref bean="tenTaskJob"/>
+        </property>
+        <property name="targetMethod">
+            <value>work</value>
+        </property>
+    </bean>
+
+    <!--  调度触发器 -->
+    <bean id="tenTaskJobTrigger"
+          class="org.springframework.scheduling.quartz.CronTriggerFactoryBean">
+        <property name="name" value="work_default_name"/>
+        <property name="group" value="work_default"/>
+        <property name="jobDetail">
+            <ref bean="tenJobDetail" />
+        </property>
+        <property name="cronExpression">
+            <value>0/10 * * * * ?</value>
+        </property>
+    </bean>
+
+    <!-- 调度工厂 -->
+    <bean id="scheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="tenTaskJobTrigger"/>
+            </list>
+        </property>
+    </bean>
+</beans>
