@@ -1,4 +1,4 @@
-package com.iterror.libu.doc.job;
+package com.iterror.libu.doc.quartz;
 
 import com.iterror.libu.common.task.BaseTask;
 
