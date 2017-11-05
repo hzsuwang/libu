@@ -1,0 +1,20 @@
+协议参数说明：
+协议加密码规则
+1.	所有的json请求参数中增加t=时间戳 sign=签名（不参与签名）
+    签名规则如下：
+    1)	对json参数转换成map按名称a-z排序, value为null、数组、结构体不参与签名
+    2)	md5(secret_key=secret_key+(map列表中的参数key=value拼接)+ secret_key=secret_key) 得到结果:sign 值
+2.	对参数整体做des加密(模式DES/CBC/PKCS5Padding 偏移量qk@_0608) 得到结果:A
+3.	base64加密(最后的请求的json) 得到结果:B
+4.	对最后的结果B进行json传送 ：格式如下:{param:B}
+
+
+1登录
+2注册
+3找回密码
+4增加事件
+5增加事件内容
+6增加自己的付出内容
+7搜索功能
+8统计功能
+9

@@ -9,4 +9,5 @@ import org.springframework.stereotype.Service;
  */
 @Service("contactService")
 public class ContactServiceImpl extends BaseService implements ContactService {
+
 }

@@ -13,22 +13,22 @@ import lombok.Data;
  */
 @Data
 @Table("lb_admin_user")
-@Comment("充值记录表")
+@Comment("后台用户信息表")
 public class AdminUserDO extends BaseDO {
 
     @Column("user_name")
-    @Comment("产品的价格")
+    @Comment("用户名")
     private String userName;
 
     @Column("password")
-    @Comment("产品的价格")
+    @Comment("密码")
     private String password;
 
     @Column("user_mark")
-    @Comment("产品的价格")
+    @Comment("备注")
     private String userMark;
 
     @Column("status")
-    @Comment("产品的价格")
+    @Comment("状态")
     private int    status;
 }
